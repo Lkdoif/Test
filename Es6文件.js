@@ -17,6 +17,12 @@ let  f=300,g='cc';
     fn();
 }
 
+const aa = new Promise((res,rej)=>{rej('111')});
+    aa
+        .then((value)=>{console.log('成功',value)},(value)=>{console.log('失败',value)})
+        .catch((err)=>{console.log('err',err)})
+
+
 
 // const
 /** 1. 一定要赋初始值
